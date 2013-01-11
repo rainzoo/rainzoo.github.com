@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<!--
+		Supersized - Fullscreen Slideshow jQuery Plugin
+		Version : 3.2.7
+		Site	: www.buildinternet.com/project/supersized		
+		Author	: Sam Dunn
+		Company : One Mighty Roar (www.onemightyroar.com)
+		License : MIT License / GPL License
+	-->
+	<head>
+		<title>Art | Rainzoo</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />		
+		<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="theme/supersized.shutter.css" type="text/css" media="screen" />		
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>		
+		<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+		<script type="text/javascript" src="theme/supersized.shutter.min.js"></script>	
+		<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>		
+		<script type="text/javascript">
+			jQuery(function($){
+				 $('.dropdown-toggle').dropdown();
+				$.supersized({				
+					// Functionality
+					slide_interval : 3000,		// Length between transitions
+					transition     : 1, 		// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+					transition_speed : 700,		// Speed of transition					   
+					// Components					
+					slide_links	: 'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+					slides 	:  	[
+						{image : 'images/connect.jpg', title : 'Connect the dots ',thumb : 'images/connect_thumb.jpg', url : ''},
+						{image : 'images/etch.jpg', title : 'Etch silly dreams',thumb : 'images/etch_thumb.jpg', url : ''},  
+						{image : 'images/njc.jpg', title : 'Not just craft ', thumb : 'images/njc_thumb.jpg', url : ''},
+						{image : 'images/loop.jpg', title : 'Hiring !', thumb : 'images/loop_thumb.jpg', url : ''}
+						]					
+				});
+		    });		    
+		</script>		
+	</head>
+	<style type="text/css">
+		ul#demo-block{ margin:0 15px 15px 15px; }
+			ul#demo-block li{ margin:0 0 10px 0; padding:10px; display:inline; float:left; clear:both; color:#aaa; background:url('img/bg-black.png'); font:11px Helvetica, Arial, sans-serif; }
+			ul#demo-block li a{ color:#eee; font-weight:bold; }
+	</style>
+	
+<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body {
+	padding-top: 40px;
+}
+</style>
+<link href="../bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+<body>
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+			<a class="brand" href="../index.html">Rainzoo</a>
+			<ul class="nav">												
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">	Stories	<b class="caret"></b> </a>
+					<ul class="dropdown-menu" class="dropdown-menu" role="menu" aria-labelledby="dLabel">							
+						<li> <a href="../story/pristine.html"> Pristine </a> </li>
+						<li> <a href="../story/aquarium.html"> Flying Aquarium </a> </li>							
+						<li class="divider"> </li>							
+						<li> <a href="../story/cloudsmith.html"> Cloudsmith </a> </li>
+						<li> <a href="../story/thursday.html"> Better Thursday </a> </li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Poems<b class="caret"></b> </a>
+					<ul class="dropdown-menu" class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+						<li> <a href="../poem/talcumdove.html"> Talcum dove </a> </li>
+					</ul>
+				</li>					
+				<li class="active"> <a href="../gallery/gallery.html"> Gallery </a></li>
+				<li> <a href="http://jigsaw.rainzoo.com"> Code </a></li>								
+				<li> <a href="../feedback.html"> Feedback </a></li>					
+			</ul>
+			</div>
+		</div>
+	</div>
+	<!--Info Block
+	<ul id="demo-block">
+		<li>Home : <a href="http://rainzoo.com"> Rainzoo </a></li>
+        <li> Inspired art </li>
+	</ul>
+	-->
+		<!--End of styles-->
+	<!--Thumbnail Navigation-->
+	<div id="prevthumb"></div>
+	<div id="nextthumb"></div>
+		<!--Arrow Navigation-->
+	<a id="prevslide" class="load-item"></a>
+	<a id="nextslide" class="load-item"></a>
+		<div id="thumb-tray" class="load-item">
+		<div id="thumb-back"></div>
+		<div id="thumb-forward"></div>
+	</div>
+		<!--Time Bar-->
+	<div id="progress-back" class="load-item">
+		<div id="progress-bar"></div>
+	</div>
+		<!--Control Bar-->
+	<div id="controls-wrapper" class="load-item">
+		<div id="controls">			
+			<!-- Play/pause -->
+			<a id="play-button"><img id="pauseplay" src="img/pause.png"/></a>
+			<!--Slide counter-->
+			<div id="slidecounter">
+				<span class="slidenumber"></span> / <span class="totalslides"></span>
+			</div>
+			<!--Thumb Tray button-->
+			<a id="tray-button"><img id="tray-arrow" src="img/button-tray-up.png"/></a>			
+			<!--Navigation-->
+			<ul id="slide-list"></ul>	
+			
+			<!--Slide captions displayed here-->
+			<div id="slidecaption"></div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+/*      Landscape phones and down */
+@media ( max-width : 480px) {
+	
+	#to_cluster.clustered {
+		margin-top: -50px;
+	}
+	#to_cluster {
+		position: absolute;
+		font-family: sans-serif;
+		font-weight: bold;
+		line-height: 100%;
+		display: block;
+		font-size: 200px;
+		top: 60px;
+	}
+	.clustered svg {
+		
+	}
+}
+
+/*      Landscape phone to portrait tablet */
+@media ( max-width : 768px) {
+	
+	#to_cluster.clustered {
+		margin-top: -50px;
+	}
+	#to_cluster {
+		position: absolute;
+		text-indent: -9999px;
+		width: 768px;	
+		font-family: sans-serif;
+		font-weight: bold;
+		line-height: 200%;
+		display: block;
+		font-size: 200px;
+		top: 60px;
+	}
+	.clustered svg {
+		position: absolute;
+		top: -12px;
+		left: 0;
+	}
+}
+
+/*      Portrait tablet to landscape and desktop */
+@media ( min-width : 768px) and (max-width: 980px) {
+	
+}
+
+/*      Large desktop */
+@media ( min-width : 1200px) {
+	
+}
+
+#to_cluster.clustered {
+	margin-top: -50px;
+}
+
+#to_cluster {
+	position: absolute;
+	text-indent: -9999px;	
+	width: 800px;
+	font-family: sans-serif;
+	font-weight: bold;
+	line-height: 100%;
+	display: block;
+	font-size: 200px;
+	top: 60px;
+}
+
+.clustered svg {
+	position: absolute;
+	top: -12px;
+	left: 0;
+}
+
+body {
+	padding-top: 200px;
+}
+
+.footer {
+	border-top: 1px solid #E5E5E5;
+	margin-top: 45px;
+	padding: 35px 0 36px;
+}
